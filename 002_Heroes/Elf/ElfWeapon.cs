@@ -15,11 +15,5 @@ namespace _002_Heroes.Elf
 		public string Name => "Оружие эльфа";
 
 		public double Weight => 2;
-				
-		public void Atack(ITarget target)
-		{
-			var damage = Damage * Sharpness;
-			target.TakeDamage(damage);
-		}
 	}
 }

@@ -9,7 +9,7 @@ namespace _002_Heroes
 	/// <summary>
 	/// Представляет собой цель, которую можно атаковать
 	/// </summary>
-	public interface ITarget
+	public interface ITarget : INamed
 	{
 		/// <summary>
 		/// Очки здоровья
@@ -19,8 +19,9 @@ namespace _002_Heroes
 		/// <summary>
 		/// Принять урон
 		/// </summary>
+		/// <param name="damager">Тот, кто наносит урон</param>
 		/// <param name="damage">Урон</param>
 		/// <returns>Принятый урон с учетом брони и др.</returns>
-		double TakeDamage(double damage);
+		double TakeDamage(IDamager damager, double damage);
 	}
 }

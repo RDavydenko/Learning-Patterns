@@ -19,12 +19,6 @@ namespace _002_Heroes
 		/// <summary>
 		/// Острота (множитель урона)
 		/// </summary>
-		double Sharpness { get; }
-
-		/// <summary>
-		/// Нанести атаку по цели
-		/// </summary>
-		/// <param name="target">Атакуемая цель</param>		
-		void Atack(ITarget target);
+		double Sharpness { get; }		
 	}
 }

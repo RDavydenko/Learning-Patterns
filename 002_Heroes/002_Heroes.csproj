@@ -49,11 +49,16 @@
     <Compile Include="General\MobInventory.cs" />
     <Compile Include="Hero.cs" />
     <Compile Include="IArmor.cs" />
+    <Compile Include="IDamager.cs" />
     <Compile Include="IHeroFactory.cs" />
     <Compile Include="IInventory.cs" />
     <Compile Include="IItem.cs" />
+    <Compile Include="INamed.cs" />
     <Compile Include="ITarget.cs" />
     <Compile Include="IWeapon.cs" />
+    <Compile Include="Orc\OrcArmor.cs" />
+    <Compile Include="Orc\OrcFactory.cs" />
+    <Compile Include="Orc\OrcWeapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
