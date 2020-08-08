@@ -8,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace Singleton._001_Logger
 {
+	/// <summary>
+	/// Singleton класс логера. Сохраняет логи сначала в динамическую память, а затем сбрасывает все на диск.
+	/// Такое может быть, например, когда по какой-то причине следует ограничить доступ к диску (быстродействие и др.)
+	/// </summary>
 	public class Logger
 	{
 		private static Logger _instance;
 		private string _path = "logs.txt";
+
+		private List<string> _text = new List<string>(); // Логи хранятся в динамической памяти
 
 		private Logger() { }
 
@@ -49,14 +55,30 @@ namespace Singleton._001_Logger
 			return new DateTime(years, mouth, days, hours, minutes, seconds, milliseconds);
 		}
 
+		/// <summary>
+		/// Добавляет лог в динамическую память
+		/// </summary>
+		/// <param name="text">Текст лога</param>
 		public void AddLog(string text)
 		{
 			string log = $"[{DateTime.Now:dd.MM.yyyy HH:mm:ss.fff}] {text}";
+			_text.Add(log);
+		}
+
+		/// <summary>
+		/// Сохраняет логи на диске
+		/// </summary>
+		public void Save()
+		{
 			using (StreamWriter sr = new StreamWriter(_path, true))
 			{
-				sr.WriteLine(log);
+				for (int i = 0; i < _text.Count; i++)
+				{
+					sr.WriteLine(_text[i]);
+				}
 				sr.Close();
 			}
+			_text.Clear(); // После сохранения динамическая память очищается
 		}
 
 		public List<string> GetLogs()

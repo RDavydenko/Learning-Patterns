@@ -12,7 +12,10 @@ namespace FactoryMethod
 {
 	class Program
 	{
-		static void Main(string[] args)
+		/// <summary>
+		/// Проверяем работу паттерна Фабричный метод на примере застройщиков и построек
+		/// </summary>
+		static void HousesAndBuilders()
 		{
 			GoogleMaps maps = new GoogleMaps(); // Класс, работающий с постройками через интерфейс IHouse
 
@@ -27,6 +30,11 @@ namespace FactoryMethod
 			maps.AddRange(house1, house2, house3);
 			var allHouses = maps.GetHouses();
 			var highHouses = maps.GetHouses(h => h.Floors > 5);
+		}
+
+		static void Main(string[] args)
+		{
+			
 		}
 	}
 }
