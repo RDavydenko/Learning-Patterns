@@ -53,6 +53,14 @@
     <Compile Include="001_Builder_and_Houses\Houses\WoodenHouse.cs" />
     <Compile Include="001_Builder_and_Houses\IBuilder.cs" />
     <Compile Include="001_Builder_and_Houses\IHouse.cs" />
+    <Compile Include="002_Messangers_and_Messages\MessageBase.cs" />
+    <Compile Include="002_Messangers_and_Messages\Messages\PhotoInstagram.cs" />
+    <Compile Include="002_Messangers_and_Messages\Messages\TelegramMessage.cs" />
+    <Compile Include="002_Messangers_and_Messages\Messages\Tweet.cs" />
+    <Compile Include="002_Messangers_and_Messages\MessangerBase.cs" />
+    <Compile Include="002_Messangers_and_Messages\Messangers\Instagram.cs" />
+    <Compile Include="002_Messangers_and_Messages\Messangers\Telegram.cs" />
+    <Compile Include="002_Messangers_and_Messages\Messangers\Twitter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
