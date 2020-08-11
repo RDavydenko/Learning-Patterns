@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Builder._001_BreadBuilder;
 using Builder._002_NutrientsFacts;
+using Builder._003_PizzaBuilder;
 
 namespace Builder
 {
@@ -13,8 +14,13 @@ namespace Builder
 		static void Main(string[] args)
 		{
 			BreadBuilderTest(); // 001
+			Console.WriteLine();
 
 			GameBuilderTest(); // 002
+			Console.WriteLine();
+
+			PizzaBuilderTest(); // 003
+			Console.WriteLine();
 		}
 
 		/// <summary>
@@ -58,6 +64,21 @@ namespace Builder
 
 			// Информация по игре
 			Console.WriteLine(game.ToString());
+		}
+
+		/// <summary>
+		/// Тестируем третий пример с билдером пиццы
+		/// </summary>
+		private static void PizzaBuilderTest()
+		{
+			// Получаем готовую пиццу через конктретного билдера пиццы
+			Pizza pizza = new ConcretePizzaBuilder()
+				.SetDiameter(50)
+				.SetPortionsCount(12)
+				.SetCheese(false)
+				.Build();
+
+			Console.WriteLine(pizza.ToString());
 		}
 	}
 }

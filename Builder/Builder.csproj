@@ -49,6 +49,9 @@
     <Compile Include="002_NutrientsFacts\Attributes\NameAttribute.cs" />
     <Compile Include="002_NutrientsFacts\Game.cs" />
     <Compile Include="002_NutrientsFacts\GameBuilder.cs" />
+    <Compile Include="003_PizzaBuilder\ConcretePizzaBuilder.cs" />
+    <Compile Include="003_PizzaBuilder\PizzaBuilder.cs" />
+    <Compile Include="003_PizzaBuilder\Pizza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
