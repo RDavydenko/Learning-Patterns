@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Decorator._001_PC_Builder
 {
+	/// <summary>
+	/// Базовый класс Компьютера
+	/// </summary>
 	public abstract class ComputerBase
 	{
 		/// <summary>
@@ -13,6 +16,9 @@ namespace Decorator._001_PC_Builder
 		/// </summary>
 		public double Cost { get; protected set; }
 
+		/// <summary>
+		/// Компоненты ПК
+		/// </summary>
 		public List<string> Components { get; protected set; }
 
 		public ComputerBase()

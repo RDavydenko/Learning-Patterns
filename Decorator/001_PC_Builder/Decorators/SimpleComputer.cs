@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Decorator._001_PC_Builder.Decorators
 {
+	/// <summary>
+	/// Класс, реализующий базовый класс <see cref="ComputerBase"/>
+	/// </summary>
 	public class SimpleComputer : ComputerBase
 	{
 		public SimpleComputer()
