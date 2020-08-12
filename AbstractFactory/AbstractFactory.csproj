@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4C514A1-80B3-456C-8C44-71B99F3753A0}</ProjectGuid>
+    <ProjectGuid>{DF976039-A9D2-4A03-85D1-F68EECF3670B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>AbstractFactory</RootNamespace>
     <AssemblyName>AbstractFactory</AssemblyName>
@@ -43,11 +43,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Auto.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Car\CarBody.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Car\CarEngine.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Car\CarFactory.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Car\CarTank.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\IAutoFactory.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\IBody.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\IComponent.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\IEngine.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\ITank.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Motorcycle\MotorcycleBody.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Motorcycle\MotorcycleEngine.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Motorcycle\MotorcycleFactory.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Motorcycle\MotorcycleTank.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Truck\TruckBody.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Truck\TruckEngine.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Truck\TruckFactory.cs" />
+    <Compile Include="001_Cars_Trucks_and_Motorcycles\Truck\TruckTank.cs" />
+    <Compile Include="002_Heroes\Elf\ElfArmor.cs" />
+    <Compile Include="002_Heroes\Elf\ElfFactory.cs" />
+    <Compile Include="002_Heroes\Elf\ElfWeapon.cs" />
+    <Compile Include="002_Heroes\General\MobInventory.cs" />
+    <Compile Include="002_Heroes\Hero.cs" />
+    <Compile Include="002_Heroes\IArmor.cs" />
+    <Compile Include="002_Heroes\IDamager.cs" />
+    <Compile Include="002_Heroes\IHeroFactory.cs" />
+    <Compile Include="002_Heroes\IInventory.cs" />
+    <Compile Include="002_Heroes\IItem.cs" />
+    <Compile Include="002_Heroes\INamed.cs" />
+    <Compile Include="002_Heroes\ITarget.cs" />
+    <Compile Include="002_Heroes\IWeapon.cs" />
+    <Compile Include="002_Heroes\Orc\OrcArmor.cs" />
+    <Compile Include="002_Heroes\Orc\OrcFactory.cs" />
+    <Compile Include="002_Heroes\Orc\OrcWeapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
