@@ -9,13 +9,13 @@ using Facade.Attributes;
 namespace Facade.Extensions
 {
 	/// <summary>
-	/// С помощью рефлексии возвращает название <see cref="RussifierAttribute.Name"/> из атрибута <see cref="RussifierAttribute"/>
+	/// С помощью рефлексии возвращает название <see cref="RussifierAttribute.Name"/> из атрибута <see cref="RussifierAttribute"/> для перечислений.
 	/// </summary>
 	static class RussifierTranslator
 	{
-		public static string Russify(this BodyPart part)
+		public static string Russify(this Enum obj)
 		{
-			var attrs = part.GetType().GetMember(part.ToString())[0].GetCustomAttributes(true);
+			var attrs = obj.GetType().GetMember(obj.ToString())[0].GetCustomAttributes(true);
 			string name = string.Empty;
 			foreach (var attr in attrs)
 			{
