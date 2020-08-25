@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Bridge._001_CrossPlatformApps.Applications;
 using Bridge._001_CrossPlatformApps.Platforms;
+using Bridge._002_CustomFigures.Colors;
+using Bridge._002_CustomFigures.Figures;
 
 namespace Bridge
 {
@@ -16,8 +18,9 @@ namespace Bridge
 			CrossPlatformApplicationsTest(); // 001
 			Console.WriteLine();
 
-
-		}
+			CustomFiguresTest(); // 002
+			Console.WriteLine();
+		}		
 
 		/// <summary>
 		/// Тестируем первый пример реализации паттерна Bridge (мост)
@@ -42,6 +45,31 @@ namespace Bridge
 			windows.DrawApp(browser);
 			linux.DrawApp(textEditor);
 			mac.DrawApp(textEditor);
+		}
+
+		/// <summary>
+		/// Тестируем второй пример реализации паттерна Bridge (мост)
+		/// </summary>
+		static void CustomFiguresTest()
+		{
+			// Фигуры
+			var cube = new Cube(); // Куб
+			var sphere = new Sphere(); // Сфера
+
+			Console.WriteLine(cube);
+			Console.WriteLine(sphere);
+			Console.WriteLine();
+
+			// Цвета
+			IColor red = new Red(); // Красный
+			IColor yellow = new Yellow(); // Желтый
+
+			// Окрашиваем фигуры
+			cube.Color = red;
+			sphere.Color = yellow;
+
+			Console.WriteLine(cube);
+			Console.WriteLine(sphere);
 		}
 	}
 }

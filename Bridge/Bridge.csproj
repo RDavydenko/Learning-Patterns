@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +51,12 @@
     <Compile Include="001_CrossPlatformApps\Platforms\MacOSPlatform.cs" />
     <Compile Include="001_CrossPlatformApps\Platforms\PlatformBase.cs" />
     <Compile Include="001_CrossPlatformApps\Platforms\WindowsPlatform.cs" />
+    <Compile Include="002_CustomFigures\Colors\IColor.cs" />
+    <Compile Include="002_CustomFigures\Colors\Red.cs" />
+    <Compile Include="002_CustomFigures\Colors\Yellow.cs" />
+    <Compile Include="002_CustomFigures\Customizations\IColored.cs" />
+    <Compile Include="002_CustomFigures\Figures\Cube.cs" />
+    <Compile Include="002_CustomFigures\Figures\Sphere.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
