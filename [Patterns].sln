@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{E01D7D8F-7780-42C4-9F64-0BE3DE432380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{72629E64-FB64-4DAF-BE83-BF0E8896915F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{E01D7D8F-7780-42C4-9F64-0BE3DE432380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E01D7D8F-7780-42C4-9F64-0BE3DE432380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E01D7D8F-7780-42C4-9F64-0BE3DE432380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72629E64-FB64-4DAF-BE83-BF0E8896915F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72629E64-FB64-4DAF-BE83-BF0E8896915F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72629E64-FB64-4DAF-BE83-BF0E8896915F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72629E64-FB64-4DAF-BE83-BF0E8896915F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
